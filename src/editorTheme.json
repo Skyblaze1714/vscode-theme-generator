@@ -1,0 +1,27 @@
+{
+  "background": {
+    "red": "",
+    "green": "",
+    "blue": ""
+  },
+  "editor.foreground": {
+    "red": "",
+    "green": "",
+    "blue": ""
+  },
+  "editorLineNumber.foreground": {
+    "red": "",
+    "green": "",
+    "blue": ""
+  },
+  "editorCursor.background": {
+    "red": "",
+    "green": "",
+    "blue": ""
+  },
+  "editorCursor.foreground": {
+    "red": "",
+    "green": "",
+    "blue": ""
+  }
+}

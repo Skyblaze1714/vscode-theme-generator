@@ -1,0 +1,49 @@
+body
+  margin: 0px
+  font-family: consolas
+
+.menu
+  display: flex
+
+  ul
+    margin: 0px
+    padding: 0px
+    li
+      display: inline-block
+      padding: 10px
+      
+      &:hover
+        background: black
+        color: white
+
+
+.rating-selector
+  display: flex
+  padding: 0px 5px
+
+  &:hover
+    background: black
+
+  button
+    background: none;
+    border: none;
+    color: #999;
+    cursor: pointer;
+    font-size: 18pt;
+    margin: 0;
+    outline: none;
+    padding: 0;
+
+    &.gold
+      color: goldenrod
+
+
+.editor
+  border-top: 1px solid black
+  border-bottom: 1px solid black
+
+  .line-num
+    display: inline-block
+    width: 20px
+    margin: 0px 5px
+    text-align: right

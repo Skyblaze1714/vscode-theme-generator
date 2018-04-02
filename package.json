@@ -1,0 +1,25 @@
+{
+  "name": "vscode-theme-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/app.ts",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Skyblaze1714/vscode-theme-generator.git"
+  },
+  "author": "Daniele Lasagno",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Skyblaze1714/vscode-theme-generator/issues"
+  },
+  "homepage": "https://github.com/Skyblaze1714/vscode-theme-generator#readme",
+  "dependencies": {
+    "brain.js": "^1.1.2",
+    "electron": "^1.8.4",
+    "electron-prebuilt-compile": "^1.8.4"
+  }
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="main.sass">
+</head>
+<body>
+  <div class="menu">
+    <ul>
+      <li>Refresh</li>
+    </ul>
+    <div class="rating-selector">
+      <button class="star" id="star1">★</button>
+      <button class="star" id="star2">★</button>
+      <button class="star" id="star3">★</button>
+      <button class="star" id="star4">★</button>
+      <button class="star" id="star5">★</button>
+    </div>
+  </div>
+  <div class="editor" id="main-editor">
+    <span class="line-num"> 1</span>    <span class="keyword">import</span> {app, Browser<span class="inactive-selected">win</span>dow} <span class="keyword">from</span> <span class="string">'electron'</span>;                                                                                                                 <br>
+    <span class="line-num"> 2</span>    <span class="keyword">import</span> * <span class="keyword">as</span> path <span class="keyword">from</span> <span class="string">'path'</span>;                                                                                                                                          <br>
+    <span class="line-num"> 3</span>    <span class="keyword">import</span> * <span class="keyword">as</span> url <span class="keyword">from</span> <span class="string">'url'</span>;                                                                                                                                            <br>
+    <span class="line-num"> 4</span>                                                                                                                                                                                                                                                                                              <br>
+    <span class="line-num"> 5</span>    <span class="comment">// Comment, Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>                                                                                                                                                                                         <br>
+    <span class="line-num"> 6</span>    <span class="storage-type">let</span> <span class="variable highligth-selected">win</span>;                                                                                                                                                                                               <br>
+    <span class="line-num"> 1</span>                                                                                                                                                                                                                                                                                              <br>
+    <span class="line-num"> 1</span>    <span class="storage-type">function</span> <span class="func-name">create<span class="inactive-selected">win</span>dow</span> (<span class="func-arg">argument</span>) {                                                                                                                  <br>
+    <span class="line-num"> 9</span>    &emsp;<span class="comment">// Comment, Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>                                                                                                                                                                                   <br>
+    <span class="line-num">10</span>    &emsp;<span class="variable highligth-selected">win</span> <span class="keyword">= new</span> <span class="class-name">Browser<span class="inactive-selected">win</span>dow</span>({width: <span class="number">800</span>, height: <span class="number">600</span>});                    <br>
+    <span class="line-num">11</span>                                                                                                                                                                                                                                                                                              <br>
+    <span class="line-num">12</span>    &emsp;<span class="comment">// Comment, Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>                                                                                                                                                                                   <br>
+    <span class="line-num">13</span>    &emsp;<span class="variable highligth-selected">win</span>.<span class="func-name">loadURL</span>(url.<span class="func-name">format</span>({                                                                                                                                             <br>
+    <span class="line-num">14</span>    &emsp;&emsp;pathname: path.join(__dirname, <span class="string">'../src/index.html'</span>),                                                                                                                                                                                              <br>
+    <span class="line-num">15</span>    &emsp;&emsp;protocol: <span class="string">'file:'</span>,                                                                                                                                                                                                                                <br>
+    <span class="line-num">16</span>    &emsp;&emsp;slashes: <span class="builtin-const">true</span>                                                                                                                                                                                                                              <br>
+    <span class="line-num">17</span>    &emsp;}));                                                                                                                                                                                                                                                                                <br>
+    <span class="line-num">18</span>                                                                                                                                                                                                                                                                                              <br>
+    <span class="line-num">19</span>    &emsp;<span class="comment">// Comment, Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>                                                                                                                                                                                   <br>
+    <span class="line-num">20</span>    &emsp;<span class="variable selected">win</span>.webContents.<span class="func-name">openDevTools()</span>;                                                                                                                                                                               <br>
+    <span class="line-num">21</span>                                                                                                                                                                                                                                                                                              <br>
+    <span class="line-num">22</span>    &emsp;<span class="comment">// Comment, Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>                                                                                                                                                                                   <br>
+    <span class="line-num">23</span>    &emsp;<span class="variable highligth-selected">win</span>.<span class="func-name">on</span>(<span class="string">'closed'</span>, () => <span class="selected-bracket">{</span>                                                                                                          <br>
+    <span class="line-num">24</span>    &emsp;&emsp;<span class="comment">// Comment, Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>                                                                                                                                                                             <br>
+    <span class="line-num">25</span>    &emsp;&emsp;<span class="variable highligth-selected">win</span> <span class="keyword">=</span> <span class="builtin-const">null</span>;                                                                                                                                                  <br>
+    <span class="line-num">26</span>    &emsp;});                                                                                                                                                                                                                                                                                 <br>
+    <span class="line-num">27</span>    <span class="selected-bracket">}</span>                                                                                                                                                                                                                                                   <br>
+    <span class="line-num">28</span>    <span class="storage">private</span> <span class="storage-type">let</span> <span class="variable">variable</span>;                                                                                                                                                                        <br>
+  </div>
+
+  <h4>
+    Rate color combinations to get machine-learning-recommended themes below.<br/>
+    Keep rating and the recommendations will keep getting better!<br/>
+    (it often takes at least 20 ratings to get good recommendations)
+  </h4>
+  <div id="themes"></div>
+
+  <script src="themeGenerator.js"></script>
+</body>
+</html>
